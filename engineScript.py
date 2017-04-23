@@ -49,7 +49,7 @@ def on_message(client, userdata, msg):
              time.sleep(0.2)
              GPIO.output(20,GPIO.HIGH)
         elif message_json['state']['desired']['function'] == "honk":
-             print("Honking")
+             print("Pressing the Honking Button")
              GPIO.setup(5, GPIO.OUT)
              GPIO.output(5,GPIO.LOW)
              time.sleep(0.2)
